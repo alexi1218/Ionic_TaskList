@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add Task</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="myBack">
+  <ion-item>
+    <ion-label stacked>E.g. Apply for a job</ion-label>
+    <ion-input type="text" [(ngModel)]="tValue"></ion-input>
+  </ion-item>
+  <button ion-button color="primary" (click)="addTask()" icon-left>
+    <ion-icon name="add"></ion-icon>Add</button>
+</ion-content>

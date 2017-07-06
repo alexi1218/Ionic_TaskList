@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar align-title="center">
+    <ion-title>My Tasks</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="myBack">
+  <ion-list>
+    <button ion-item *ngFor="let task of tasks" (click)="taskSelected(task)">
+      {{task}}
+    </button>
+  </ion-list>
+  <button ion-button (click)="clear()" [disabled]="isDisabled" color="dark">Clear Tasks</button>
+ </ion-content>
